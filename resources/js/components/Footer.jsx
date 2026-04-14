@@ -25,16 +25,16 @@ export default function Footer() {
                             <img
                                 src="/assets/logo.png"
                                 alt="2M Groupe SOREAD"
-                                className="h-9 w-9 rounded-md object-cover"
+                                className="h-10 w-auto shrink-0 rounded-md object-contain"
                             />
-                            <div className="leading-tight">
+                            {/* <div className="leading-tight">
                                 <div className="text-sm font-extrabold tracking-wide">
                                     2M GROUPE
                                 </div>
                                 <div className="-mt-0.5 text-[11px] font-semibold tracking-[0.22em] opacity-80">
                                     SOREAD
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
 
                         <p className="mt-5 max-w-sm text-sm leading-6 text-alpha-white/80">
@@ -123,7 +123,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="mt-12 border-t border-beta-white/10 pt-6">
+                <div className="mt-12 pt-6">
                     <div className="flex flex-col gap-3 text-xs text-alpha-white/70 md:flex-row md:items-center md:justify-between">
                         <div>© {new Date().getFullYear()} SOREAD 2M. Tous droits réservés.</div>
                         <div className="flex flex-wrap gap-x-6 gap-y-2">
