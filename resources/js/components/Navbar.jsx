@@ -1,7 +1,7 @@
 import { Link, usePage } from '@inertiajs/react';
 
 const navItems = [
-    { label: 'Le Groupe', href: '/le-groupe' },
+    { label: 'Le Groupe', href: '/group2M' },
     { label: 'Médias', href: '/medias' },
     { label: 'Gouvernance', href: '/gouvernance' },
     { label: 'ESG', href: '/esg' },

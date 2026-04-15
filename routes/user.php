@@ -6,3 +6,6 @@ use Inertia\Inertia;
 Route::get('/', function () {
     return Inertia::render('user/home/index');
 })->name('user.home.index');
+Route::get('/group2M', function () {
+    return Inertia::render('user/group2M/index');
+})->name('user.group.index');
