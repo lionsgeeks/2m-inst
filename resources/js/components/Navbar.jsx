@@ -29,7 +29,8 @@ export default function Navbar() {
                 <nav className="hidden flex-1 items-center justify-center gap-7 lg:flex">
                     {navItems.map((item) => {
                         const isActive =
-                            url === item.href || url?.startsWith(`${item.href}/`);
+                            url === item.href ||
+                            url?.startsWith(`${item.href}/`);
 
                         return (
                             <Link

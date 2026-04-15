@@ -2,8 +2,8 @@ export default function QuickAccessSection() {
     return (
         <section className="relative overflow-hidden bg-alpha-white py-14 sm:py-18">
             <div className="pointer-events-none absolute inset-0">
-                <div className="absolute -left-28 -top-24 h-72 w-72 rounded-full bg-beta-blue/60 blur-3xl" />
-                <div className="absolute -bottom-24 -right-28 h-72 w-72 rounded-full bg-gold/15 blur-3xl" />
+                <div className="absolute -top-24 -left-28 h-72 w-72 rounded-full bg-beta-blue/60 blur-3xl" />
+                <div className="absolute -right-28 -bottom-24 h-72 w-72 rounded-full bg-gold/15 blur-3xl" />
             </div>
 
             <div className="relative mx-auto max-w-7xl px-4">
@@ -28,7 +28,8 @@ export default function QuickAccessSection() {
                         {
                             label: 'Gouvernance',
                             href: '/gouvernance',
-                            description: 'Organisation, transparence & décisions.',
+                            description:
+                                'Organisation, transparence & décisions.',
                             icon: (
                                 <svg
                                     viewBox="0 0 24 24"
@@ -60,7 +61,7 @@ export default function QuickAccessSection() {
                             ),
                         },
                         {
-                            label: "Appels d’offres",
+                            label: 'Appels d’offres',
                             href: '/appels-offres',
                             description: 'Consultez les marchés en cours.',
                             icon: (
@@ -97,7 +98,7 @@ export default function QuickAccessSection() {
                         <a
                             key={item.href}
                             href={item.href}
-                            className="group relative rounded-2xl bg-beta-white p-6 shadow-sm ring-1 ring-alpha/10 transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-so-black/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-beta"
+                            className="group relative rounded-2xl bg-beta-white p-6 shadow-sm ring-1 ring-alpha/10 transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-so-black/10 focus-visible:ring-2 focus-visible:ring-beta focus-visible:outline-none"
                         >
                             <div className="flex items-start gap-4">
                                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-beta-blue/60 text-beta ring-1 ring-beta/10 transition group-hover:bg-beta-blue/80">
@@ -126,4 +127,3 @@ export default function QuickAccessSection() {
         </section>
     );
 }
-

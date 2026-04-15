@@ -125,7 +125,10 @@ export default function Footer() {
 
                 <div className="mt-12 pt-6">
                     <div className="flex flex-col gap-3 text-xs text-alpha-white/70 md:flex-row md:items-center md:justify-between">
-                        <div>© {new Date().getFullYear()} SOREAD 2M. Tous droits réservés.</div>
+                        <div>
+                            © {new Date().getFullYear()} SOREAD 2M. Tous droits
+                            réservés.
+                        </div>
                         <div className="flex flex-wrap gap-x-6 gap-y-2">
                             <Link
                                 href="/mentions-legales"
@@ -152,4 +155,3 @@ export default function Footer() {
         </footer>
     );
 }
-

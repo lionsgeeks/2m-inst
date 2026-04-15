@@ -2,8 +2,8 @@ export default function NewsSection() {
     return (
         <section className="relative overflow-hidden bg-beta-white py-14 sm:py-18">
             <div className="pointer-events-none absolute inset-0">
-                <div className="absolute -left-28 -top-24 h-72 w-72 rounded-full bg-beta-blue/60 blur-3xl" />
-                <div className="absolute -bottom-24 -right-28 h-72 w-72 rounded-full bg-gold/20 blur-3xl" />
+                <div className="absolute -top-24 -left-28 h-72 w-72 rounded-full bg-beta-blue/60 blur-3xl" />
+                <div className="absolute -right-28 -bottom-24 h-72 w-72 rounded-full bg-gold/20 blur-3xl" />
             </div>
 
             <div className="relative mx-auto max-w-7xl px-4">
@@ -24,7 +24,7 @@ export default function NewsSection() {
 
                     <a
                         href="/actualites"
-                        className="inline-flex items-center justify-center rounded-lg bg-beta px-4 py-2.5 text-sm font-semibold text-beta-white shadow-sm ring-1 ring-beta/20 transition hover:bg-beta/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-beta-white"
+                        className="inline-flex items-center justify-center rounded-lg bg-beta px-4 py-2.5 text-sm font-semibold text-beta-white shadow-sm ring-1 ring-beta/20 transition hover:bg-beta/90 focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-beta-white focus-visible:outline-none"
                     >
                         Voir les actualités
                         <svg
@@ -64,7 +64,7 @@ export default function NewsSection() {
                         <a
                             key={news.title}
                             href="/actualites"
-                            className="group relative overflow-hidden rounded-2xl bg-beta-white shadow-sm ring-1 ring-alpha/10 transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-so-black/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-beta"
+                            className="group relative overflow-hidden rounded-2xl bg-beta-white shadow-sm ring-1 ring-alpha/10 transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-so-black/10 focus-visible:ring-2 focus-visible:ring-beta focus-visible:outline-none"
                         >
                             <div className="relative h-56 overflow-hidden">
                                 <img
@@ -75,7 +75,7 @@ export default function NewsSection() {
                                 />
                                 <div className="absolute inset-0 bg-linear-to-t from-alpha/80 via-alpha/25 to-transparent" />
 
-                                <div className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full bg-beta-white/90 px-3 py-1 text-[11px] font-semibold text-alpha ring-1 ring-alpha/10">
+                                <div className="absolute top-4 left-4 inline-flex items-center gap-2 rounded-full bg-beta-white/90 px-3 py-1 text-[11px] font-semibold text-alpha ring-1 ring-alpha/10">
                                     <span className="inline-flex h-2 w-2 rounded-full bg-beta" />
                                     {news.category}
                                 </div>
@@ -100,7 +100,7 @@ export default function NewsSection() {
                                     </div>
                                 </div>
 
-                                <div className="mt-3 text-lg font-extrabold leading-snug tracking-tight text-alpha">
+                                <div className="mt-3 text-lg leading-snug font-extrabold tracking-tight text-alpha">
                                     {news.title}
                                 </div>
 
@@ -118,4 +118,3 @@ export default function NewsSection() {
         </section>
     );
 }
-

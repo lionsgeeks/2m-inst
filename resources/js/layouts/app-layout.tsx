@@ -27,6 +27,8 @@ export default function AppLayout({
     }
 
     return (
-        <AppSidebarLayout breadcrumbs={breadcrumbs}>{children}</AppSidebarLayout>
+        <AppSidebarLayout breadcrumbs={breadcrumbs}>
+            {children}
+        </AppSidebarLayout>
     );
 }

@@ -8,7 +8,6 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-
     --color-beta: #136dec;
     --color-alpha: #020617;
     --color-alpha-blue: #0a1e3b;

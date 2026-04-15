@@ -8,12 +8,12 @@ export default function HeroSection() {
                     className="h-full w-full object-cover opacity-25"
                 />
                 <div className="absolute inset-0 bg-linear-to-b from-beta-white/10 via-beta-blue/40 to-alpha/70" />
-                <div className="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-beta/20 blur-3xl" />
-                <div className="absolute -bottom-28 -right-24 h-72 w-72 rounded-full bg-gold/20 blur-3xl" />
+                <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-beta/20 blur-3xl" />
+                <div className="absolute -right-24 -bottom-28 h-72 w-72 rounded-full bg-gold/20 blur-3xl" />
             </div>
 
             <div className="relative flex min-h-svh flex-col">
-                <div className="mx-auto flex w-full flex-1 items-center max-w-7xl px-4 pb-32 pt-14 sm:pb-36 sm:pt-18">
+                <div className="mx-auto flex w-full max-w-7xl flex-1 items-center px-4 pt-14 pb-32 sm:pt-18 sm:pb-36">
                     <div className="grid w-full items-center gap-10 lg:grid-cols-2 lg:gap-12">
                         <div className="max-w-2xl">
                             <div className="inline-flex items-center gap-2 rounded-full border border-beta-white/10 bg-beta-white/5 px-3 py-1 text-[11px] font-semibold tracking-wide text-beta-white/80">
@@ -21,7 +21,7 @@ export default function HeroSection() {
                                 Média public · Maroc & international
                             </div>
 
-                            <h1 className="mt-6 text-4xl font-extrabold leading-[1.05] tracking-tight text-beta-white sm:text-5xl lg:text-6xl">
+                            <h1 className="mt-6 text-4xl leading-[1.05] font-extrabold tracking-tight text-beta-white sm:text-5xl lg:text-6xl">
                                 L’audiovisuel public au service de{' '}
                                 <span className="text-beta">l’information</span>
                                 , de la culture et du divertissement.
@@ -36,7 +36,7 @@ export default function HeroSection() {
                             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
                                 <a
                                     href="#"
-                                    className="inline-flex w-full items-center justify-center rounded-lg bg-beta px-5 py-3 text-sm font-semibold text-beta-white shadow-sm ring-1 ring-beta/20 transition hover:bg-beta/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-alpha sm:w-auto"
+                                    className="inline-flex w-full items-center justify-center rounded-lg bg-beta px-5 py-3 text-sm font-semibold text-beta-white shadow-sm ring-1 ring-beta/20 transition hover:bg-beta/90 focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-alpha focus-visible:outline-none sm:w-auto"
                                 >
                                     Découvrir nos contenus
                                     <svg
@@ -52,7 +52,7 @@ export default function HeroSection() {
                                 </a>
                                 <a
                                     href="#"
-                                    className="inline-flex w-full items-center justify-center rounded-lg border border-beta-white/15 bg-beta-white/5 px-5 py-3 text-sm font-semibold text-beta-white/90 shadow-sm transition hover:bg-beta-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-alpha sm:w-auto"
+                                    className="inline-flex w-full items-center justify-center rounded-lg border border-beta-white/15 bg-beta-white/5 px-5 py-3 text-sm font-semibold text-beta-white/90 shadow-sm transition hover:bg-beta-white/10 focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-alpha focus-visible:outline-none sm:w-auto"
                                 >
                                     Voir les chaînes
                                 </a>
@@ -118,7 +118,7 @@ export default function HeroSection() {
                                 </div>
                             </div>
 
-                            <div className="pointer-events-none absolute -right-10 -top-10 hidden h-32 w-32 rounded-full bg-beta/15 blur-2xl lg:block" />
+                            <div className="pointer-events-none absolute -top-10 -right-10 hidden h-32 w-32 rounded-full bg-beta/15 blur-2xl lg:block" />
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@ export default function HeroSection() {
                     <div className="mx-auto max-w-7xl px-4">
                         <div className="rounded-2xl border border-beta-white/10 bg-beta-white p-4 shadow-xl shadow-so-black/15 md:p-6">
                             <div className="grid gap-4 sm:grid-cols-3"> */}
-                                {/* {[
+                {/* {[
                                     {
                                         label: 'Audience digitale',
                                         value: '25M+',
@@ -180,7 +180,7 @@ export default function HeroSection() {
                                         ),
                                     },
                                 ].map((stat) => ( */}
-                                    {/* <div
+                {/* <div
                                         key={stat.label}
                                         className="group rounded-xl bg-alpha-white p-5 ring-1 ring-alpha/5 transition hover:ring-beta/20"
                                     >
@@ -197,8 +197,8 @@ export default function HeroSection() {
                                             {stat.hint}
                                         </div>
                                     </div> */}
-                                {/* ))} */}
-                            {/* </div>
+                {/* ))} */}
+                {/* </div>
                         </div>
                     </div>
                 </div> */}
@@ -206,4 +206,3 @@ export default function HeroSection() {
         </section>
     );
 }
-
