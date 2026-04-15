@@ -12,3 +12,6 @@ Route::get('/group2M', function () {
 Route::get('/medias', function () {
     return Inertia::render('user/medias/index');
 })->name('user.medias.index');
+Route::get('/gouvernance', function () {
+    return Inertia::render('user/gouvernance/index');
+})->name('user.gouvernance.index');

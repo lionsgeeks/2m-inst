@@ -1,6 +1,6 @@
 export default function SynergySection() {
     return (
-        <section className="relative overflow-hidden bg-alpha-blue py-16 sm:py-20">
+        <section className="relative overflow-hidden bg-alpha-blue py-16 sm:py-20 mb-10">
             <div className="pointer-events-none absolute inset-0">
                 <div className="absolute inset-0 bg-linear-to-b from-alpha-blue/40 via-alpha-blue to-alpha-blue" />
                 <div className="absolute -top-28 -left-28 h-80 w-80 rounded-full bg-beta/15 blur-3xl" />
