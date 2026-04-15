@@ -15,3 +15,7 @@ Route::get('/medias', function () {
 Route::get('/gouvernance', function () {
     return Inertia::render('user/gouvernance/index');
 })->name('user.gouvernance.index');
+Route::get('/esg', function () {
+    return Inertia::render('user/esg/index');
+})->name('user.esg.index');
+
