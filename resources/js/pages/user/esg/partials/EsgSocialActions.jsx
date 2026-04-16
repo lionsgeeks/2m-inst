@@ -80,7 +80,7 @@ export default function EsgSocialActions() {
             <div className="mx-auto max-w-7xl px-4">
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                     <div className="max-w-xl">
-                        <div className="text-xs font-extrabold uppercase tracking-[0.22em] text-beta">
+                        <div className="text-xs font-extrabold tracking-[0.22em] text-beta uppercase">
                             Solidarité
                         </div>
                         <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-alpha sm:text-4xl">
@@ -106,4 +106,3 @@ export default function EsgSocialActions() {
         </section>
     );
 }
-

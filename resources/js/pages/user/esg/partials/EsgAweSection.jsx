@@ -8,7 +8,12 @@ function Pill({ children }) {
 
 function ImageTile({ src, className = '' }) {
     return (
-        <div className={['overflow-hidden rounded-2xl ring-1 ring-alpha/10', className].join(' ')}>
+        <div
+            className={[
+                'overflow-hidden rounded-2xl ring-1 ring-alpha/10',
+                className,
+            ].join(' ')}
+        >
             <img
                 src={src}
                 alt=""
@@ -44,17 +49,18 @@ export default function EsgAweSection() {
                     </div>
 
                     <div className="order-1 lg:order-2">
-                        <div className="text-xs font-extrabold uppercase tracking-[0.22em] text-beta">
+                        <div className="text-xs font-extrabold tracking-[0.22em] text-beta uppercase">
                             Leadership féminin
                         </div>
                         <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-alpha sm:text-4xl">
                             Africa Women Experts &amp; AWE/Elles
                         </h2>
                         <p className="mt-5 text-base leading-7 text-so-gray">
-                            Nous œuvrons pour briser le plafond de verre à travers le continent.
-                            La plateforme Africa Women Experts (AWE) identifie et promeut les
-                            compétences féminines africaines pour une meilleure visibilité dans
-                            les médias.
+                            Nous œuvrons pour briser le plafond de verre à
+                            travers le continent. La plateforme Africa Women
+                            Experts (AWE) identifie et promeut les compétences
+                            féminines africaines pour une meilleure visibilité
+                            dans les médias.
                         </p>
 
                         <div className="mt-8 grid gap-4">
@@ -86,4 +92,3 @@ export default function EsgAweSection() {
         </section>
     );
 }
-

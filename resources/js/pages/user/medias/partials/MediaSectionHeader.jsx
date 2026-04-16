@@ -10,7 +10,8 @@ export default function MediaSectionHeader() {
                     Nos Marques Médias
                 </h2>
                 <p className="mt-2 text-sm leading-6 text-so-gray sm:text-base">
-                    Une présence 360° sur la TV, la radio, le web et les réseaux.
+                    Une présence 360° sur la TV, la radio, le web et les
+                    réseaux.
                 </p>
             </div>
 
@@ -35,4 +36,3 @@ export default function MediaSectionHeader() {
         </div>
     );
 }
-

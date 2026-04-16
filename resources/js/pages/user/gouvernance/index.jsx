@@ -26,4 +26,3 @@ export default function Index() {
 }
 
 Index.layout = (page) => <AppLayout>{page}</AppLayout>;
-

@@ -8,7 +8,7 @@ function TimelineItem({ title, description, status = 'done' }) {
         <div className="relative border-l-2 border-alpha-green/20 pl-10">
             <div
                 className={[
-                    'absolute -left-[9px] top-0 h-4 w-4 rounded-full ring-4',
+                    'absolute top-0 -left-[9px] h-4 w-4 rounded-full ring-4',
                     dotClass,
                 ].join(' ')}
             />
@@ -25,7 +25,7 @@ export default function EsgEnvironmentRoadmap() {
                 <div className="rounded-3xl bg-beta-green/60 p-8 ring-1 ring-alpha-green/15 sm:p-12 lg:p-16">
                     <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
                         <div className="order-2 lg:order-1">
-                            <div className="text-xs font-extrabold uppercase tracking-[0.22em] text-alpha-green">
+                            <div className="text-xs font-extrabold tracking-[0.22em] text-alpha-green uppercase">
                                 Trajectoire bas carbone
                             </div>
                             <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-alpha sm:text-4xl">
@@ -67,4 +67,3 @@ export default function EsgEnvironmentRoadmap() {
         </section>
     );
 }
-

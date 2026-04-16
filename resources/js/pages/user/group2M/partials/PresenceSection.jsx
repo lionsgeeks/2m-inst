@@ -51,9 +51,9 @@ export default function PresenceSection() {
                     </div>
 
                     <div className="relative">
-                        <div className="pointer-events-none absolute -right-10 -top-10 hidden h-32 w-32 rounded-full bg-beta/15 blur-2xl lg:block" />
+                        <div className="pointer-events-none absolute -top-10 -right-10 hidden h-32 w-32 rounded-full bg-beta/15 blur-2xl lg:block" />
 
-                        <div className="overflow-hidden rounded-2xl bg-beta-white shadow-lg shadow-so-black/10 ring-1 ring-alpha/10">
+                        <div className="overflow-hidden rounded-2xl bg-beta-white shadow-lg ring-1 shadow-so-black/10 ring-alpha/10">
                             <div className="grid lg:grid-cols-[1fr_1.1fr]">
                                 <div className="p-6 sm:p-8">
                                     <div className="text-sm font-semibold text-so-gray">
@@ -64,13 +64,16 @@ export default function PresenceSection() {
                                     </div>
                                     <p className="mt-3 text-sm leading-6 text-so-gray">
                                         Des contenus pensés pour informer,
-                                        expliquer et rapprocher, avec une qualité
-                                        éditoriale constante.
+                                        expliquer et rapprocher, avec une
+                                        qualité éditoriale constante.
                                     </p>
 
                                     <div className="mt-6 grid grid-cols-2 gap-4">
                                         {[
-                                            { label: 'Formats', value: 'Multi' },
+                                            {
+                                                label: 'Formats',
+                                                value: 'Multi',
+                                            },
                                             { label: 'Qualité', value: 'HD+' },
                                             { label: 'Accès', value: 'Replay' },
                                             { label: 'Support', value: '24/7' },
@@ -107,4 +110,3 @@ export default function PresenceSection() {
         </section>
     );
 }
-

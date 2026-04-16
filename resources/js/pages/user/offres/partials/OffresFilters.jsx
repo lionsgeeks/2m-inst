@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 
 function FieldLabel({ children }) {
     return (
-        <div className="text-[11px] font-extrabold uppercase tracking-[0.22em] text-so-gray">
+        <div className="text-[11px] font-extrabold tracking-[0.22em] text-so-gray uppercase">
             {children}
         </div>
     );
@@ -11,7 +11,7 @@ function FieldLabel({ children }) {
 function TextInput({ value, onChange, placeholder }) {
     return (
         <div className="relative">
-            <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-so-gray/70">
+            <span className="pointer-events-none absolute top-1/2 left-3 -translate-y-1/2 text-so-gray/70">
                 <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
                     <path
                         fill="currentColor"
@@ -23,7 +23,7 @@ function TextInput({ value, onChange, placeholder }) {
                 value={value}
                 onChange={(event) => onChange(event.target.value)}
                 placeholder={placeholder}
-                className="h-12 w-full rounded-xl bg-alpha-white pl-11 pr-4 text-sm text-alpha ring-1 ring-alpha/10 placeholder:text-so-gray/70 focus:ring-2 focus:ring-beta focus:outline-none"
+                className="h-12 w-full rounded-xl bg-alpha-white pr-4 pl-11 text-sm text-alpha ring-1 ring-alpha/10 placeholder:text-so-gray/70 focus:ring-2 focus:ring-beta focus:outline-none"
             />
         </div>
     );
@@ -62,14 +62,18 @@ export default function OffresFilters({ onChange }) {
         >
             <div className="flex items-center gap-3">
                 <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-beta-blue/60 text-beta ring-1 ring-alpha/10">
-                    <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
+                    <svg
+                        viewBox="0 0 24 24"
+                        className="h-5 w-5"
+                        aria-hidden="true"
+                    >
                         <path
                             fill="currentColor"
                             d="M3 5h18v2H3V5Zm4 6h10v2H7v-2Zm2 6h6v2H9v-2Z"
                         />
                     </svg>
                 </span>
-                <div className="text-sm font-extrabold uppercase tracking-[0.22em] text-alpha">
+                <div className="text-sm font-extrabold tracking-[0.22em] text-alpha uppercase">
                     Recherche avancée
                 </div>
             </div>
@@ -140,4 +144,3 @@ export default function OffresFilters({ onChange }) {
         </section>
     );
 }
-

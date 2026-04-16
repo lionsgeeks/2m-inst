@@ -1,11 +1,11 @@
 export default function SynergySection() {
     return (
-        <section className="relative overflow-hidden bg-alpha-blue py-16 sm:py-20 mb-10">
+        <section className="relative mb-10 overflow-hidden bg-alpha-blue py-16 sm:py-20">
             <div className="pointer-events-none absolute inset-0">
                 <div className="absolute inset-0 bg-linear-to-b from-alpha-blue/40 via-alpha-blue to-alpha-blue" />
                 <div className="absolute -top-28 -left-28 h-80 w-80 rounded-full bg-beta/15 blur-3xl" />
-                <div className="absolute -bottom-28 -right-28 h-80 w-80 rounded-full bg-gold/15 blur-3xl" />
-                <div className="absolute inset-0 opacity-70 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.08)_1px,transparent_0)] bg-size-[22px_22px]" />
+                <div className="absolute -right-28 -bottom-28 h-80 w-80 rounded-full bg-gold/15 blur-3xl" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.08)_1px,transparent_0)] bg-size-[22px_22px] opacity-70" />
             </div>
 
             <div className="relative mx-auto max-w-7xl px-4">
@@ -113,7 +113,7 @@ export default function SynergySection() {
                                 <div className="h-[58%] w-[58%] rounded-full ring-2 ring-beta-white/10" />
                             </div>
                             <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="h-[40%] w-[40%] rounded-full bg-linear-to-br from-beta to-beta/70 ring-2 ring-beta-white/10 shadow-2xl shadow-so-black/25" />
+                                <div className="h-[40%] w-[40%] rounded-full bg-linear-to-br from-beta to-beta/70 shadow-2xl ring-2 shadow-so-black/25 ring-beta-white/10" />
                             </div>
 
                             <div className="absolute inset-0 flex items-center justify-center">
@@ -167,4 +167,3 @@ export default function SynergySection() {
         </section>
     );
 }
-

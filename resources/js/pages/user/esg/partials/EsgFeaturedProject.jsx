@@ -24,21 +24,24 @@ export default function EsgFeaturedProject() {
                                     Vers une production durable
                                 </div>
                                 <p className="mt-3 max-w-xl text-sm leading-6 text-alpha-white/75 sm:text-base">
-                                    Optimisation énergétique, réduction des déchets et
-                                    amélioration continue de nos pratiques opérationnelles.
+                                    Optimisation énergétique, réduction des
+                                    déchets et amélioration continue de nos
+                                    pratiques opérationnelles.
                                 </p>
 
                                 <div className="mt-6 flex flex-wrap gap-2">
-                                    {['Énergie', 'Efficience', 'Sensibilisation'].map(
-                                        (label) => (
-                                            <span
-                                                key={label}
-                                                className="inline-flex items-center rounded-full bg-beta-white/10 px-3 py-1 text-xs font-extrabold tracking-wide text-beta-white ring-1 ring-beta-white/10 backdrop-blur-sm"
-                                            >
-                                                {label}
-                                            </span>
-                                        ),
-                                    )}
+                                    {[
+                                        'Énergie',
+                                        'Efficience',
+                                        'Sensibilisation',
+                                    ].map((label) => (
+                                        <span
+                                            key={label}
+                                            className="inline-flex items-center rounded-full bg-beta-white/10 px-3 py-1 text-xs font-extrabold tracking-wide text-beta-white ring-1 ring-beta-white/10 backdrop-blur-sm"
+                                        >
+                                            {label}
+                                        </span>
+                                    ))}
                                 </div>
                             </div>
                         </div>
@@ -67,7 +70,7 @@ export default function EsgFeaturedProject() {
                                     key={item.title}
                                     className="rounded-2xl bg-beta-white p-5 shadow-sm ring-1 ring-alpha/10"
                                 >
-                                    <div className="text-xs font-extrabold uppercase tracking-wide text-so-gray">
+                                    <div className="text-xs font-extrabold tracking-wide text-so-gray uppercase">
                                         {item.title}
                                     </div>
                                     <div className="mt-3 text-3xl font-extrabold tracking-tight text-alpha">
@@ -85,4 +88,3 @@ export default function EsgFeaturedProject() {
         </section>
     );
 }
-

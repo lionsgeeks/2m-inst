@@ -16,11 +16,15 @@ function PolicyCard({ title, subtitle }) {
             <div className="mt-4 text-sm font-extrabold tracking-tight text-alpha">
                 {title}
             </div>
-            <div className="mt-2 text-xs leading-5 text-so-gray">{subtitle}</div>
+            <div className="mt-2 text-xs leading-5 text-so-gray">
+                {subtitle}
+            </div>
 
             <div className="mt-4 inline-flex items-center gap-2 text-sm font-extrabold text-beta">
                 Consulter
-                <span className="transition group-hover:translate-x-0.5">→</span>
+                <span className="transition group-hover:translate-x-0.5">
+                    →
+                </span>
             </div>
         </a>
     );
@@ -43,15 +47,15 @@ export default function InternalPoliciesSection() {
     ];
 
     return (
-        <section className="pb-14 pt-2 sm:pb-18">
+        <section className="pt-2 pb-14 sm:pb-18">
             <div className="mx-auto max-w-7xl px-4">
                 <div className="mx-auto max-w-3xl text-center">
                     <h2 className="text-2xl font-extrabold tracking-tight text-alpha sm:text-3xl">
                         Politiques Internes
                     </h2>
                     <p className="mt-3 text-sm leading-6 text-so-gray sm:text-base">
-                        Des documents de référence pour cadrer nos pratiques, nos valeurs
-                        et notre conformité.
+                        Des documents de référence pour cadrer nos pratiques,
+                        nos valeurs et notre conformité.
                     </p>
                 </div>
 
@@ -61,13 +65,14 @@ export default function InternalPoliciesSection() {
                     ))}
                 </div>
 
-                <div className="mx-auto mt-10 max-w-3xl rounded-2xl bg-linear-to-br from-beta-blue/60 via-beta-white to-beta-white p-6 text-center ring-1 ring-alpha/10 shadow-sm">
+                <div className="mx-auto mt-10 max-w-3xl rounded-2xl bg-linear-to-br from-beta-blue/60 via-beta-white to-beta-white p-6 text-center shadow-sm ring-1 ring-alpha/10">
                     <div className="text-sm font-extrabold tracking-tight text-alpha">
                         Besoin d’une politique spécifique ?
                     </div>
                     <p className="mt-2 text-sm leading-6 text-so-gray">
-                        Contactez-nous pour accéder à d’autres documents ou obtenir des
-                        précisions sur notre dispositif de conformité.
+                        Contactez-nous pour accéder à d’autres documents ou
+                        obtenir des précisions sur notre dispositif de
+                        conformité.
                     </p>
                     <a
                         href="#"
@@ -80,4 +85,3 @@ export default function InternalPoliciesSection() {
         </section>
     );
 }
-

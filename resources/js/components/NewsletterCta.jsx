@@ -51,7 +51,7 @@ export default function NewsletterCta() {
                             value={email}
                             onChange={(event) => setEmail(event.target.value)}
                             placeholder="Votre email"
-                            className="h-12 w-full rounded-full bg-beta-white/5 px-5 text-sm text-beta-white placeholder:text-beta-white/55 ring-1 ring-beta-white/15 backdrop-blur-sm transition focus:ring-2 focus:ring-beta focus:outline-none"
+                            className="h-12 w-full rounded-full bg-beta-white/5 px-5 text-sm text-beta-white ring-1 ring-beta-white/15 backdrop-blur-sm transition placeholder:text-beta-white/55 focus:ring-2 focus:ring-beta focus:outline-none"
                             autoComplete="email"
                         />
                         <button
@@ -79,4 +79,3 @@ export default function NewsletterCta() {
         </section>
     );
 }
-

@@ -12,23 +12,23 @@ export default function GouvernanceHero() {
                 />
                 <div className="absolute inset-0 bg-linear-to-b from-beta-white/10 via-beta-blue/40 to-alpha/70" />
                 <div className="absolute -top-28 -left-28 h-80 w-80 rounded-full bg-beta/20 blur-3xl" />
-                <div className="absolute -bottom-32 -right-28 h-96 w-96 rounded-full bg-gold/20 blur-3xl" />
+                <div className="absolute -right-28 -bottom-32 h-96 w-96 rounded-full bg-gold/20 blur-3xl" />
             </div>
 
             <div className="relative mx-auto max-w-7xl px-4 py-14 sm:py-18">
                 <div className="mx-auto max-w-3xl text-center">
                     <div className="inline-flex items-center gap-2 rounded-full border border-beta-white/10 bg-beta-white/5 px-4 py-1.5 text-[11px] font-semibold tracking-wide text-beta-white/80">
                         <span className="inline-flex h-2 w-2 rounded-full bg-beta" />
-                            Gouvernance
+                        Gouvernance
                     </div>
 
                     <h1 className="mt-6 text-3xl font-extrabold tracking-tight text-beta-white sm:text-5xl">
                         Gouvernance &amp; Transparence
                     </h1>
                     <p className="mt-4 text-sm leading-6 text-beta-white/75 sm:text-base">
-                        Engagement envers la redevabilité, la transparence et la qualité
-                        de la gouvernance au service de l’intérêt général et de la
-                        performance.
+                        Engagement envers la redevabilité, la transparence et la
+                        qualité de la gouvernance au service de l’intérêt
+                        général et de la performance.
                     </p>
 
                     <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-center">
@@ -47,20 +47,22 @@ export default function GouvernanceHero() {
                     </div>
 
                     <div className="mt-7 flex flex-wrap items-center justify-center gap-2">
-                        {['Transparence', 'Conformité', 'Contrôle', 'Éthique'].map(
-                            (label) => (
-                                <span
-                                    key={label}
-                                    className="inline-flex items-center rounded-full bg-beta-white/5 px-4 py-2 text-xs font-semibold text-beta-white/90 ring-1 ring-beta-white/15"
-                                >
-                                    {label}
-                                </span>
-                            ),
-                        )}
+                        {[
+                            'Transparence',
+                            'Conformité',
+                            'Contrôle',
+                            'Éthique',
+                        ].map((label) => (
+                            <span
+                                key={label}
+                                className="inline-flex items-center rounded-full bg-beta-white/5 px-4 py-2 text-xs font-semibold text-beta-white/90 ring-1 ring-beta-white/15"
+                            >
+                                {label}
+                            </span>
+                        ))}
                     </div>
                 </div>
             </div>
         </section>
     );
 }
-

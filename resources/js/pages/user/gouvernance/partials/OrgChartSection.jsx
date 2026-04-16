@@ -6,7 +6,7 @@ function OrgNode({ title, subtitle, className = '' }) {
                 className,
             ].join(' ')}
         >
-            <div className="text-[11px] font-extrabold uppercase tracking-wide text-so-gray">
+            <div className="text-[11px] font-extrabold tracking-wide text-so-gray uppercase">
                 {title}
             </div>
             <div className="mt-1 text-sm font-extrabold tracking-tight text-alpha">
@@ -51,8 +51,8 @@ export default function OrgChartSection() {
                         Organigramme du Groupe
                     </h2>
                     <p className="mt-3 text-sm leading-6 text-so-gray sm:text-base">
-                        Une structure claire pour une prise de décision efficace et une
-                        exécution cohérente.
+                        Une structure claire pour une prise de décision efficace
+                        et une exécution cohérente.
                     </p>
                 </div>
 
@@ -64,7 +64,7 @@ export default function OrgChartSection() {
                             <OrgNode
                                 title="Présidence"
                                 subtitle="Conseil d’Administration"
-                                className="ring-2 ring-gold/40 shadow-sm"
+                                className="shadow-sm ring-2 ring-gold/40"
                             />
                         </div>
 
@@ -85,7 +85,10 @@ export default function OrgChartSection() {
                                 title="Direction"
                                 subtitle="Direction Programmes"
                             />
-                            <OrgNode title="Direction" subtitle="Direction Technique" />
+                            <OrgNode
+                                title="Direction"
+                                subtitle="Direction Technique"
+                            />
                         </div>
 
                         <div className="grid gap-6 sm:grid-cols-4">
@@ -93,7 +96,10 @@ export default function OrgChartSection() {
                                 title="Support"
                                 subtitle="Ressources Humaines"
                             />
-                            <OrgNode title="Support" subtitle="Finance &amp; Achat" />
+                            <OrgNode
+                                title="Support"
+                                subtitle="Finance &amp; Achat"
+                            />
                             <OrgNode title="Support" subtitle="Juridique" />
                             <OrgNode title="Support" subtitle="Communication" />
                         </div>
@@ -103,4 +109,3 @@ export default function OrgChartSection() {
         </section>
     );
 }
-

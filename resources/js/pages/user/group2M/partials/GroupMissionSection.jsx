@@ -1,6 +1,6 @@
 export default function GroupMissionSection() {
     return (
-        <section className="bg-transparent pb-12 pt-22 sm:pb-16">
+        <section className="bg-transparent pt-22 pb-12 sm:pb-16">
             <div className="mx-auto max-w-7xl px-4">
                 <div className="mx-auto max-w-2xl text-center">
                     <div className="inline-flex items-center gap-2 rounded-full border border-alpha/10 bg-alpha-white px-3 py-1 text-[11px] font-semibold tracking-wide text-alpha">
@@ -95,4 +95,3 @@ export default function GroupMissionSection() {
         </section>
     );
 }
-

@@ -95,8 +95,8 @@ export default function EthicsComplianceSection() {
             <div className="pointer-events-none absolute inset-0">
                 <div className="absolute inset-0 bg-linear-to-b from-alpha-blue/40 via-alpha-blue to-alpha-blue" />
                 <div className="absolute -top-28 -left-28 h-80 w-80 rounded-full bg-beta/15 blur-3xl" />
-                <div className="absolute -bottom-28 -right-28 h-80 w-80 rounded-full bg-gold/15 blur-3xl" />
-                <div className="absolute inset-0 opacity-70 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.08)_1px,transparent_0)] bg-size-[22px_22px]" />
+                <div className="absolute -right-28 -bottom-28 h-80 w-80 rounded-full bg-gold/15 blur-3xl" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.08)_1px,transparent_0)] bg-size-[22px_22px] opacity-70" />
             </div>
 
             <div className="relative mx-auto max-w-7xl px-4">
@@ -110,16 +110,23 @@ export default function EthicsComplianceSection() {
                             Éthique &amp; Conformité
                         </h2>
                         <p className="mt-4 text-sm leading-6 text-alpha-white/75 sm:text-base">
-                            Un cadre clair pour protéger l’organisation, renforcer la
-                            transparence et instaurer une culture de conformité.
+                            Un cadre clair pour protéger l’organisation,
+                            renforcer la transparence et instaurer une culture
+                            de conformité.
                         </p>
 
                         <div className="mt-8 grid gap-4 sm:grid-cols-2">
                             {[
                                 { label: 'Intégrité', tone: 'bg-beta' },
                                 { label: 'Transparence', tone: 'bg-gold' },
-                                { label: 'Conformité', tone: 'bg-beta-white/10' },
-                                { label: 'Prévention', tone: 'bg-beta-white/10' },
+                                {
+                                    label: 'Conformité',
+                                    tone: 'bg-beta-white/10',
+                                },
+                                {
+                                    label: 'Prévention',
+                                    tone: 'bg-beta-white/10',
+                                },
                             ].map((pill) => (
                                 <div
                                     key={pill.label}
@@ -134,7 +141,7 @@ export default function EthicsComplianceSection() {
                         </div>
                     </div>
 
-                    <div className="rounded-2xl bg-beta-white/10 p-5 ring-1 ring-beta-white/10 shadow-2xl shadow-so-black/20 sm:p-6">
+                    <div className="rounded-2xl bg-beta-white/10 p-5 shadow-2xl ring-1 shadow-so-black/20 ring-beta-white/10 sm:p-6">
                         <div className="flex items-center gap-3">
                             <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-beta text-beta-white ring-1 ring-beta-white/10">
                                 <FlagIcon />
@@ -169,4 +176,3 @@ export default function EthicsComplianceSection() {
         </section>
     );
 }
-

@@ -15,9 +15,9 @@ function LightCard() {
                     Le CPD : 10 ans d&apos;action
                 </div>
                 <p className="mt-4 text-sm leading-6 text-so-gray sm:text-base">
-                    Créé en 2013, le Comité Parité et Diversité de 2M veille à la
-                    promotion de l&apos;image de la femme et à la valorisation de la
-                    diversité marocaine à l&apos;antenne.
+                    Créé en 2013, le Comité Parité et Diversité de 2M veille à
+                    la promotion de l&apos;image de la femme et à la
+                    valorisation de la diversité marocaine à l&apos;antenne.
                 </p>
 
                 <a
@@ -25,7 +25,9 @@ function LightCard() {
                     className="mt-6 inline-flex items-center gap-2 text-sm font-extrabold text-beta transition group-hover:gap-3"
                 >
                     Découvrir la charte
-                    <span className="transition group-hover:translate-x-0.5">→</span>
+                    <span className="transition group-hover:translate-x-0.5">
+                        →
+                    </span>
                 </a>
             </div>
         </div>
@@ -59,8 +61,9 @@ function DarkCard() {
                     Trophée Tilila
                 </div>
                 <p className="mt-4 text-sm leading-6 text-alpha-white/75 sm:text-base">
-                    Le premier prix qui récompense les spots publicitaires luttant
-                    contre les stéréotypes féminins et promouvant la parité au Maroc.
+                    Le premier prix qui récompense les spots publicitaires
+                    luttant contre les stéréotypes féminins et promouvant la
+                    parité au Maroc.
                 </p>
 
                 <div className="mt-6">
@@ -81,7 +84,7 @@ export default function EsgPillars() {
         <section className="bg-so-gray/5 py-16 sm:py-20">
             <div className="mx-auto max-w-7xl px-4">
                 <div className="mx-auto max-w-3xl text-center">
-                    <div className="text-xs font-extrabold uppercase tracking-[0.22em] text-beta">
+                    <div className="text-xs font-extrabold tracking-[0.22em] text-beta uppercase">
                         Comité parité &amp; diversité
                     </div>
                     <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-alpha sm:text-4xl">

@@ -24,8 +24,9 @@ export default function EsgInnovationSpotlight() {
                             </h2>
 
                             <p className="mt-6 text-base leading-7 text-alpha-white/80">
-                                Situé à Ain Sebaâ, ce centre digital inclusif forme gratuitement
-                                les jeunes talents casablancais aux métiers de la création
+                                Situé à Ain Sebaâ, ce centre digital inclusif
+                                forme gratuitement les jeunes talents
+                                casablancais aux métiers de la création
                                 numérique, du codage et de l&apos;audiovisuel.
                             </p>
 
@@ -36,16 +37,25 @@ export default function EsgInnovationSpotlight() {
                                     'Coding & audiovisuel',
                                     'Insertion professionnelle',
                                 ].map((item) => (
-                                    <div key={item} className="flex items-center gap-3">
+                                    <div
+                                        key={item}
+                                        className="flex items-center gap-3"
+                                    >
                                         <span className="inline-flex h-5 w-5 items-center justify-center text-gold">
-                                            <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
+                                            <svg
+                                                viewBox="0 0 24 24"
+                                                className="h-5 w-5"
+                                                aria-hidden="true"
+                                            >
                                                 <path
                                                     fill="currentColor"
                                                     d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17Z"
                                                 />
                                             </svg>
                                         </span>
-                                        <div className="text-sm text-beta-white">{item}</div>
+                                        <div className="text-sm text-beta-white">
+                                            {item}
+                                        </div>
                                     </div>
                                 ))}
                             </div>
@@ -70,9 +80,11 @@ export default function EsgInnovationSpotlight() {
                                 />
                             </div>
 
-                            <div className="absolute -bottom-6 -right-6 rounded-2xl bg-gold p-6 shadow-xl ring-1 ring-gold/20">
-                                <div className="text-4xl font-extrabold tracking-tight text-alpha">+500</div>
-                                <div className="mt-2 text-[11px] font-extrabold uppercase tracking-[0.22em] text-alpha">
+                            <div className="absolute -right-6 -bottom-6 rounded-2xl bg-gold p-6 shadow-xl ring-1 ring-gold/20">
+                                <div className="text-4xl font-extrabold tracking-tight text-alpha">
+                                    +500
+                                </div>
+                                <div className="mt-2 text-[11px] font-extrabold tracking-[0.22em] text-alpha uppercase">
                                     Jeunes formés
                                 </div>
                             </div>
@@ -83,4 +95,3 @@ export default function EsgInnovationSpotlight() {
         </section>
     );
 }
-

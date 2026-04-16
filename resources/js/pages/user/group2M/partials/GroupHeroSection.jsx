@@ -14,7 +14,7 @@ export default function GroupHeroSection() {
             </div>
 
             <div className="relative flex h-screen flex-col">
-                <div className="mx-auto flex w-full flex-1 items-center max-w-7xl px-4 pb-24 pt-16 sm:pb-28">
+                <div className="mx-auto flex w-full max-w-7xl flex-1 items-center px-4 pt-16 pb-24 sm:pb-28">
                     <div className="w-full">
                         <div className="mx-auto max-w-3xl text-center">
                             <div className="inline-flex items-center gap-2 rounded-full border border-beta-white/15 bg-beta-white/5 px-3 py-1 text-[11px] font-semibold tracking-wide text-beta-white/90 shadow-sm">
@@ -22,7 +22,7 @@ export default function GroupHeroSection() {
                                 Le Groupe · SOREAD 2M
                             </div>
 
-                            <h1 className="mt-6 text-4xl font-extrabold leading-[1.03] tracking-tight text-beta-white sm:text-5xl lg:text-6xl">
+                            <h1 className="mt-6 text-4xl leading-[1.03] font-extrabold tracking-tight text-beta-white sm:text-5xl lg:text-6xl">
                                 Le Groupe SOREAD 2M
                             </h1>
 
@@ -53,7 +53,7 @@ export default function GroupHeroSection() {
                             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row sm:items-center">
                                 <a
                                     href="/medias"
-                                    className="inline-flex w-full items-center justify-center rounded-xl bg-beta px-6 py-3 text-sm font-semibold text-beta-white shadow-lg shadow-so-black/20 ring-1 ring-beta/25 transition hover:bg-beta/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-alpha sm:w-auto"
+                                    className="inline-flex w-full items-center justify-center rounded-xl bg-beta px-6 py-3 text-sm font-semibold text-beta-white shadow-lg ring-1 shadow-so-black/20 ring-beta/25 transition hover:bg-beta/90 focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-alpha focus-visible:outline-none sm:w-auto"
                                 >
                                     Découvrir nos médias
                                     <svg
@@ -69,7 +69,7 @@ export default function GroupHeroSection() {
                                 </a>
                                 <a
                                     href="/actualites"
-                                    className="inline-flex w-full items-center justify-center rounded-xl border border-beta-white/15 bg-beta-white/5 px-6 py-3 text-sm font-semibold text-beta-white/95 shadow-sm ring-1 ring-beta-white/10 transition hover:bg-beta-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-alpha sm:w-auto"
+                                    className="inline-flex w-full items-center justify-center rounded-xl border border-beta-white/15 bg-beta-white/5 px-6 py-3 text-sm font-semibold text-beta-white/95 shadow-sm ring-1 ring-beta-white/10 transition hover:bg-beta-white/10 focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-alpha focus-visible:outline-none sm:w-auto"
                                 >
                                     Voir les actualités
                                 </a>
@@ -122,4 +122,3 @@ export default function GroupHeroSection() {
         </section>
     );
 }
-

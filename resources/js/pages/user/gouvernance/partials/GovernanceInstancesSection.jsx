@@ -6,13 +6,13 @@ function InstanceCard({ title, description, tag, icon, href = '#' }) {
         >
             <div className="relative h-44">
                 <div className="absolute inset-0 bg-linear-to-br from-beta-blue/80 via-beta-white to-beta-white" />
-                <div className="absolute inset-0 opacity-60 bg-[radial-gradient(circle_at_1px_1px,rgba(2,6,23,0.08)_1px,transparent_0)] bg-size-[22px_22px]" />
-                <div className="absolute -right-10 -top-10 h-28 w-28 rounded-full bg-beta/10 blur-2xl" />
-                <div className="absolute left-5 top-5 inline-flex items-center gap-2 rounded-full bg-beta-white/85 px-3 py-1 text-[11px] font-extrabold tracking-wide text-alpha ring-1 ring-alpha/10">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(2,6,23,0.08)_1px,transparent_0)] bg-size-[22px_22px] opacity-60" />
+                <div className="absolute -top-10 -right-10 h-28 w-28 rounded-full bg-beta/10 blur-2xl" />
+                <div className="absolute top-5 left-5 inline-flex items-center gap-2 rounded-full bg-beta-white/85 px-3 py-1 text-[11px] font-extrabold tracking-wide text-alpha ring-1 ring-alpha/10">
                     <span className="h-1.5 w-1.5 rounded-full bg-beta" />
                     {tag}
                 </div>
-                <div className="absolute bottom-5 left-5 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-alpha-blue text-beta-white ring-1 ring-beta-white/10 shadow-sm">
+                <div className="absolute bottom-5 left-5 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-alpha-blue text-beta-white shadow-sm ring-1 ring-beta-white/10">
                     {icon}
                 </div>
             </div>
@@ -26,7 +26,9 @@ function InstanceCard({ title, description, tag, icon, href = '#' }) {
                 </p>
                 <div className="mt-4 inline-flex items-center gap-2 text-sm font-extrabold text-beta">
                     Voir les détails
-                    <span className="transition group-hover:translate-x-0.5">→</span>
+                    <span className="transition group-hover:translate-x-0.5">
+                        →
+                    </span>
                 </div>
             </div>
         </a>
@@ -87,8 +89,9 @@ export default function GovernanceInstancesSection() {
                         Instances de Gouvernance
                     </h2>
                     <p className="mt-3 text-sm leading-6 text-so-gray sm:text-base">
-                        Les organes de gouvernance assurent la stratégie, la supervision et
-                        la conformité, dans un cadre clair et transparent.
+                        Les organes de gouvernance assurent la stratégie, la
+                        supervision et la conformité, dans un cadre clair et
+                        transparent.
                     </p>
                 </div>
 
@@ -101,4 +104,3 @@ export default function GovernanceInstancesSection() {
         </section>
     );
 }
-

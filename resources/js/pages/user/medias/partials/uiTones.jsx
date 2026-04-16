@@ -9,4 +9,3 @@ const toneClasses = {
 export function getToneClass(tone) {
     return toneClasses[tone] ?? toneClasses.beta;
 }
-

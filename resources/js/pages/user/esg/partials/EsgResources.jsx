@@ -13,8 +13,10 @@ function DownloadCard({ title, meta }) {
                 </svg>
             </div>
             <div className="min-w-0">
-                <div className="text-sm font-extrabold tracking-tight text-alpha">{title}</div>
-                <div className="mt-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-so-gray">
+                <div className="text-sm font-extrabold tracking-tight text-alpha">
+                    {title}
+                </div>
+                <div className="mt-2 text-[10px] font-semibold tracking-[0.18em] text-so-gray uppercase">
                     {meta}
                 </div>
             </div>
@@ -38,7 +40,8 @@ export default function EsgResources() {
                         Downloads Library
                     </h2>
                     <p className="mt-4 text-base leading-7 text-so-gray">
-                        Documents clés et références pour suivre notre démarche ESG.
+                        Documents clés et références pour suivre notre démarche
+                        ESG.
                     </p>
                 </div>
 
@@ -51,4 +54,3 @@ export default function EsgResources() {
         </section>
     );
 }
-

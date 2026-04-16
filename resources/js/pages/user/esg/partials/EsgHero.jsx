@@ -14,7 +14,7 @@ export default function EsgHero() {
             </div>
 
             <div className="relative flex h-screen flex-col">
-                <div className="mx-auto flex w-full max-w-7xl flex-1 items-center px-4 pb-24 pt-16 sm:pb-28">
+                <div className="mx-auto flex w-full max-w-7xl flex-1 items-center px-4 pt-16 pb-24 sm:pb-28">
                     <div className="w-full">
                         <div className="mx-auto max-w-3xl text-center">
                             <div className="inline-flex items-center gap-2 rounded-full border border-beta-white/15 bg-beta-white/5 px-3 py-1 text-[11px] font-semibold tracking-wide text-beta-white/90 shadow-sm">
@@ -22,13 +22,14 @@ export default function EsgHero() {
                                 ESG / RSE · SOREAD 2M
                             </div>
 
-                            <h1 className="mt-6 text-4xl font-extrabold leading-[1.03] tracking-tight text-beta-white sm:text-5xl lg:text-6xl">
+                            <h1 className="mt-6 text-4xl leading-[1.03] font-extrabold tracking-tight text-beta-white sm:text-5xl lg:text-6xl">
                                 Engagements &amp; Impact
                             </h1>
 
                             <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-beta-white/80 sm:text-lg">
-                                Une stratégie centrée sur l’humain, la transparence et la durabilité
-                                — avec des actions concrètes et mesurables.
+                                Une stratégie centrée sur l’humain, la
+                                transparence et la durabilité — avec des actions
+                                concrètes et mesurables.
                             </p>
 
                             <div className="mx-auto mt-8 flex max-w-2xl flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-beta-white/75">
@@ -38,7 +39,10 @@ export default function EsgHero() {
                                     'Innovation',
                                     'Trajectoire bas carbone',
                                 ].map((pill) => (
-                                    <div key={pill} className="inline-flex items-center gap-2">
+                                    <div
+                                        key={pill}
+                                        className="inline-flex items-center gap-2"
+                                    >
                                         <span className="inline-flex h-1.5 w-1.5 rounded-full bg-beta" />
                                         {pill}
                                     </div>
@@ -48,7 +52,7 @@ export default function EsgHero() {
                             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row sm:items-center">
                                 <a
                                     href="#actions"
-                                    className="inline-flex w-full items-center justify-center rounded-xl bg-beta px-6 py-3 text-sm font-semibold text-beta-white shadow-lg shadow-so-black/20 ring-1 ring-beta/25 transition hover:bg-beta/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-alpha sm:w-auto"
+                                    className="inline-flex w-full items-center justify-center rounded-xl bg-beta px-6 py-3 text-sm font-semibold text-beta-white shadow-lg ring-1 shadow-so-black/20 ring-beta/25 transition hover:bg-beta/90 focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-alpha focus-visible:outline-none sm:w-auto"
                                 >
                                     Découvrir nos actions
                                     <svg
@@ -64,7 +68,7 @@ export default function EsgHero() {
                                 </a>
                                 <a
                                     href="#resources"
-                                    className="inline-flex w-full items-center justify-center rounded-xl border border-beta-white/15 bg-beta-white/5 px-6 py-3 text-sm font-semibold text-beta-white/95 shadow-sm ring-1 ring-beta-white/10 transition hover:bg-beta-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-alpha sm:w-auto"
+                                    className="inline-flex w-full items-center justify-center rounded-xl border border-beta-white/15 bg-beta-white/5 px-6 py-3 text-sm font-semibold text-beta-white/95 shadow-sm ring-1 ring-beta-white/10 transition hover:bg-beta-white/10 focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-alpha focus-visible:outline-none sm:w-auto"
                                 >
                                     Ressources &amp; publications
                                 </a>
@@ -76,4 +80,3 @@ export default function EsgHero() {
         </section>
     );
 }
-

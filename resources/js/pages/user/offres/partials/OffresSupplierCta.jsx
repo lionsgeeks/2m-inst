@@ -10,7 +10,12 @@ function CtaCard({ title, description, tone = 'light', actionLabel }) {
             : 'border-2 border-beta text-beta hover:bg-beta/5';
 
     return (
-        <div className={['relative overflow-hidden rounded-2xl p-8 ring-1', cardClass].join(' ')}>
+        <div
+            className={[
+                'relative overflow-hidden rounded-2xl p-8 ring-1',
+                cardClass,
+            ].join(' ')}
+        >
             <div className="mx-auto flex max-w-sm flex-col items-center text-center">
                 <div
                     className={[
@@ -20,7 +25,11 @@ function CtaCard({ title, description, tone = 'light', actionLabel }) {
                             : 'bg-gold/10 text-gold ring-gold/20',
                     ].join(' ')}
                 >
-                    <svg viewBox="0 0 24 24" className="h-7 w-7" aria-hidden="true">
+                    <svg
+                        viewBox="0 0 24 24"
+                        className="h-7 w-7"
+                        aria-hidden="true"
+                    >
                         <path
                             fill="currentColor"
                             d="M12 2C8.13 2 5 5.13 5 9c0 4.25 3.5 8.5 7 13 3.5-4.5 7-8.75 7-13 0-3.87-3.13-7-7-7Zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5Z"
@@ -28,8 +37,17 @@ function CtaCard({ title, description, tone = 'light', actionLabel }) {
                     </svg>
                 </div>
 
-                <div className="mt-6 text-xl font-extrabold tracking-tight">{title}</div>
-                <p className={['mt-3 text-sm leading-6', tone === 'dark' ? 'text-alpha-white/70' : 'text-so-gray'].join(' ')}>
+                <div className="mt-6 text-xl font-extrabold tracking-tight">
+                    {title}
+                </div>
+                <p
+                    className={[
+                        'mt-3 text-sm leading-6',
+                        tone === 'dark'
+                            ? 'text-alpha-white/70'
+                            : 'text-so-gray',
+                    ].join(' ')}
+                >
                     {description}
                 </p>
 
@@ -37,8 +55,10 @@ function CtaCard({ title, description, tone = 'light', actionLabel }) {
                     <a
                         href="#"
                         className={[
-                            'inline-flex h-12 w-full items-center justify-center rounded-xl px-6 text-sm font-extrabold ring-1 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2',
-                            tone === 'dark' ? 'ring-beta-white/10 focus-visible:ring-offset-alpha-blue' : 'ring-alpha/10 focus-visible:ring-offset-beta-white',
+                            'inline-flex h-12 w-full items-center justify-center rounded-xl px-6 text-sm font-extrabold ring-1 transition focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:outline-none',
+                            tone === 'dark'
+                                ? 'ring-beta-white/10 focus-visible:ring-offset-alpha-blue'
+                                : 'ring-alpha/10 focus-visible:ring-offset-beta-white',
                             buttonClass,
                         ].join(' ')}
                     >
@@ -80,4 +100,3 @@ export default function OffresSupplierCta() {
         </section>
     );
 }
-

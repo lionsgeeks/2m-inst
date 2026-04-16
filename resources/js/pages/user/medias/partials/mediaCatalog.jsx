@@ -78,4 +78,3 @@ export const defaultMediaCatalog = [
         href: '/medias',
     },
 ];
-

@@ -25,7 +25,7 @@ export default function MediaHero() {
                 />
                 <div className="absolute inset-0 bg-linear-to-b from-beta-white/10 via-beta-blue/40 to-alpha/70" />
                 <div className="absolute -top-28 -left-28 h-80 w-80 rounded-full bg-beta/20 blur-3xl" />
-                <div className="absolute -bottom-32 -right-28 h-96 w-96 rounded-full bg-gold/20 blur-3xl" />
+                <div className="absolute -right-28 -bottom-32 h-96 w-96 rounded-full bg-gold/20 blur-3xl" />
             </div>
 
             <div className="relative mx-auto max-w-7xl px-4 py-14 sm:py-18">
@@ -63,7 +63,7 @@ export default function MediaHero() {
                                     setQuery(event.target.value)
                                 }
                                 placeholder="Rechercher…"
-                                className="h-12 w-full rounded-full bg-beta-white/5 pl-11 pr-4 text-sm text-beta-white placeholder:text-beta-white/55 ring-1 ring-beta-white/15 backdrop-blur-sm transition focus:ring-2 focus:ring-beta focus:outline-none"
+                                className="h-12 w-full rounded-full bg-beta-white/5 pr-4 pl-11 text-sm text-beta-white ring-1 ring-beta-white/15 backdrop-blur-sm transition placeholder:text-beta-white/55 focus:ring-2 focus:ring-beta focus:outline-none"
                             />
                         </div>
 
@@ -101,4 +101,3 @@ export default function MediaHero() {
         </section>
     );
 }
-

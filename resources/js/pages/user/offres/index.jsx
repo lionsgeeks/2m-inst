@@ -41,7 +41,7 @@ export default function Index() {
         <div className="min-h-screen bg-so-gray/5">
             <div className="grid gap-10 sm:gap-14">
                 <OffresHero />
-                <div className='mx-auto max-w-7xl px-4 py-10 sm:py-12 grid gap-20'>
+                <div className="mx-auto grid max-w-7xl gap-20 px-4 py-10 sm:py-12">
                     <OffresFilters />
                     <OffresTenderTable tenders={tenders} />
                     <OffresSupplierCta />
@@ -53,4 +53,3 @@ export default function Index() {
 }
 
 Index.layout = (page) => <AppLayout>{page}</AppLayout>;
-

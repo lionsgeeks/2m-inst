@@ -13,7 +13,11 @@ function ReportCard({ year, title, meta, tone = 'neutral' }) {
         >
             <div className="flex items-start justify-between gap-4">
                 <div className="inline-flex items-center rounded-lg px-2.5 py-1 text-xs font-extrabold tracking-wide ring-1 ring-alpha/10">
-                    <span className={['rounded-md px-2 py-0.5', badgeClass].join(' ')}>
+                    <span
+                        className={['rounded-md px-2 py-0.5', badgeClass].join(
+                            ' ',
+                        )}
+                    >
                         {year}
                     </span>
                 </div>
@@ -26,7 +30,9 @@ function ReportCard({ year, title, meta, tone = 'neutral' }) {
 
             <div className="mt-4 inline-flex items-center gap-2 text-sm font-extrabold text-beta">
                 Télécharger
-                <span className="transition group-hover:translate-x-0.5">→</span>
+                <span className="transition group-hover:translate-x-0.5">
+                    →
+                </span>
             </div>
         </a>
     );
@@ -63,8 +69,8 @@ export default function ReportsPublicationsSection() {
                             Rapports &amp; Publications
                         </h2>
                         <p className="mt-3 text-sm leading-6 text-so-gray sm:text-base">
-                            Accédez aux documents clés et aux rapports publics (activité,
-                            gouvernance, conformité…).
+                            Accédez aux documents clés et aux rapports publics
+                            (activité, gouvernance, conformité…).
                         </p>
                     </div>
 
@@ -77,14 +83,16 @@ export default function ReportsPublicationsSection() {
                 </div>
 
                 <div className="mt-6 flex flex-wrap gap-2">
-                    {['Rapports', 'Gouvernance', 'Conformité', 'Financier'].map((label) => (
-                        <span
-                            key={label}
-                            className="inline-flex items-center rounded-full bg-beta-blue/50 px-3 py-1 text-xs font-extrabold tracking-wide text-alpha ring-1 ring-alpha/10"
-                        >
-                            {label}
-                        </span>
-                    ))}
+                    {['Rapports', 'Gouvernance', 'Conformité', 'Financier'].map(
+                        (label) => (
+                            <span
+                                key={label}
+                                className="inline-flex items-center rounded-full bg-beta-blue/50 px-3 py-1 text-xs font-extrabold tracking-wide text-alpha ring-1 ring-alpha/10"
+                            >
+                                {label}
+                            </span>
+                        ),
+                    )}
                 </div>
 
                 <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -96,4 +104,3 @@ export default function ReportsPublicationsSection() {
         </section>
     );
 }
-
