@@ -2,7 +2,7 @@ export default function Vision2025Section() {
     return (
         <section className="bg-transparent py-14 sm:py-18">
             <div className="mx-auto max-w-7xl px-4">
-                <div className="overflow-hidden rounded-3xl bg-linear-to-br from-beta via-beta/85 to-alpha-blue shadow-xl shadow-so-black/10 ring-1 ring-beta/20">
+                <div className="overflow-hidden rounded-3xl bg-linear-to-br from-beta via-beta/85 to-alpha-blue shadow-xl ring-1 shadow-so-black/10 ring-beta/20">
                     <div className="grid gap-8 p-8 sm:p-10 lg:grid-cols-[1.1fr_.9fr] lg:items-center">
                         <div>
                             <div className="inline-flex items-center gap-2 rounded-full border border-beta-white/20 bg-beta-white/10 px-3 py-1 text-[11px] font-semibold tracking-wide text-beta-white/90">
@@ -92,7 +92,7 @@ export default function Vision2025Section() {
 
                             <a
                                 href="/actualites"
-                                className="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-beta-white px-5 py-3 text-sm font-semibold text-beta shadow-sm ring-1 ring-beta-white/20 transition hover:bg-beta-white/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-beta-white focus-visible:ring-offset-2 focus-visible:ring-offset-alpha-blue"
+                                className="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-beta-white px-5 py-3 text-sm font-semibold text-beta shadow-sm ring-1 ring-beta-white/20 transition hover:bg-beta-white/90 focus-visible:ring-2 focus-visible:ring-beta-white focus-visible:ring-offset-2 focus-visible:ring-offset-alpha-blue focus-visible:outline-none"
                             >
                                 En savoir plus
                                 <svg
@@ -113,4 +113,3 @@ export default function Vision2025Section() {
         </section>
     );
 }
-

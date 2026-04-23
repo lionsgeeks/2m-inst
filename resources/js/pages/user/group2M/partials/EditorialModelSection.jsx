@@ -2,8 +2,8 @@ export default function EditorialModelSection() {
     return (
         <section className="relative overflow-hidden bg-alpha py-14 sm:py-18">
             <div className="pointer-events-none absolute inset-0">
-                <div className="absolute -left-28 -top-24 h-72 w-72 rounded-full bg-beta/20 blur-3xl" />
-                <div className="absolute -bottom-24 -right-28 h-72 w-72 rounded-full bg-gold/20 blur-3xl" />
+                <div className="absolute -top-24 -left-28 h-72 w-72 rounded-full bg-beta/20 blur-3xl" />
+                <div className="absolute -right-28 -bottom-24 h-72 w-72 rounded-full bg-gold/20 blur-3xl" />
                 <div className="absolute inset-0 bg-linear-to-b from-alpha/40 via-alpha/80 to-alpha" />
             </div>
 
@@ -160,4 +160,3 @@ export default function EditorialModelSection() {
         </section>
     );
 }
-

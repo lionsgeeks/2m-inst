@@ -1,9 +1,9 @@
-export default function GroupHeroSection() {
+export default function OffresHero() {
     return (
         <section className="relative h-screen overflow-hidden bg-alpha">
             <div className="pointer-events-none absolute inset-0">
                 <img
-                    src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=2400&q=70"
+                    src="https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=2400&q=70"
                     alt=""
                     className="h-full w-full object-cover opacity-20"
                     loading="lazy"
@@ -19,26 +19,27 @@ export default function GroupHeroSection() {
                         <div className="mx-auto max-w-3xl text-center">
                             <div className="inline-flex items-center gap-2 rounded-full border border-beta-white/15 bg-beta-white/5 px-3 py-1 text-[11px] font-semibold tracking-wide text-beta-white/90 shadow-sm">
                                 <span className="inline-flex h-2 w-2 rounded-full bg-beta" />
-                                Le Groupe · SOREAD 2M
+                                Appels d&apos;Offres · SOREAD 2M
                             </div>
 
                             <h1 className="mt-6 text-4xl leading-[1.03] font-extrabold tracking-tight text-beta-white sm:text-5xl lg:text-6xl">
-                                Le Groupe SOREAD 2M
+                                Politique d&apos;Achat &amp; Transparence
                             </h1>
 
                             <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-beta-white/80 sm:text-lg">
-                                Un groupe audiovisuel public au service de
-                                l’information, de la culture et du
-                                divertissement, accessible au Maroc et à
-                                l’international.
+                                La SOREAD 2M s&apos;engage à garantir
+                                l&apos;égalité d&apos;accès à la commande,
+                                l&apos;impartialité des décisions et la
+                                transparence des procédures pour l&apos;ensemble
+                                de ses partenaires prestataires.
                             </p>
 
                             <div className="mx-auto mt-8 flex max-w-2xl flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-beta-white/75">
                                 {[
-                                    'Information fiable',
-                                    'Culture & création',
-                                    'Divertissement',
-                                    'Multi‑plateforme',
+                                    'Égalité d’accès',
+                                    'Impartialité',
+                                    'Transparence',
+                                    'Traçabilité',
                                 ].map((pill) => (
                                     <div
                                         key={pill}
@@ -52,10 +53,10 @@ export default function GroupHeroSection() {
 
                             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row sm:items-center">
                                 <a
-                                    href="/medias"
+                                    href="#tenders"
                                     className="inline-flex w-full items-center justify-center rounded-xl bg-beta px-6 py-3 text-sm font-semibold text-beta-white shadow-lg ring-1 shadow-so-black/20 ring-beta/25 transition hover:bg-beta/90 focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-alpha focus-visible:outline-none sm:w-auto"
                                 >
-                                    Découvrir nos médias
+                                    Voir les AO
                                     <svg
                                         viewBox="0 0 20 20"
                                         aria-hidden="true"
@@ -68,56 +69,15 @@ export default function GroupHeroSection() {
                                     </svg>
                                 </a>
                                 <a
-                                    href="/actualites"
+                                    href="#filters"
                                     className="inline-flex w-full items-center justify-center rounded-xl border border-beta-white/15 bg-beta-white/5 px-6 py-3 text-sm font-semibold text-beta-white/95 shadow-sm ring-1 ring-beta-white/10 transition hover:bg-beta-white/10 focus-visible:ring-2 focus-visible:ring-beta focus-visible:ring-offset-2 focus-visible:ring-offset-alpha focus-visible:outline-none sm:w-auto"
                                 >
-                                    Voir les actualités
+                                    Rechercher &amp; filtrer
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                {/* <div className="absolute inset-x-0 -bottom-12">
-                    <div className="mx-auto max-w-7xl px-4">
-                        <div className="rounded-2xl border border-beta-white/10 bg-beta-white/95 p-4 shadow-xl shadow-so-black/15 ring-1 ring-alpha/5 backdrop-blur md:p-6">
-                            <div className="grid gap-4 sm:grid-cols-3">
-                                {[
-                                    {
-                                        label: 'Mission',
-                                        value: 'Service public',
-                                        hint: 'Information, culture, divertissement',
-                                    },
-                                    {
-                                        label: 'Couverture',
-                                        value: 'Maroc & monde',
-                                        hint: 'TV, radio et digital',
-                                    },
-                                    {
-                                        label: 'Disponibilité',
-                                        value: '24/7',
-                                        hint: 'Multi‑plateforme',
-                                    },
-                                ].map((stat) => (
-                                    <div
-                                        key={stat.label}
-                                        className="rounded-xl bg-alpha-white p-5 ring-1 ring-alpha/5 transition hover:ring-beta/20"
-                                    >
-                                        <div className="text-center text-sm font-semibold text-so-gray">
-                                            {stat.label}
-                                        </div>
-                                        <div className="mt-2 text-center text-xl font-extrabold text-alpha">
-                                            {stat.value}
-                                        </div>
-                                        <div className="mt-2 text-center text-xs text-so-gray">
-                                            {stat.hint}
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
             </div>
         </section>
     );

@@ -61,8 +61,8 @@ export default function GroupTimelineSection() {
     return (
         <section className="relative overflow-hidden bg-transparent py-14 sm:py-18">
             <div className="pointer-events-none absolute inset-0">
-                <div className="absolute -left-28 -top-24 h-72 w-72 rounded-full bg-beta-blue/60 blur-3xl" />
-                <div className="absolute -bottom-24 -right-28 h-72 w-72 rounded-full bg-gold/15 blur-3xl" />
+                <div className="absolute -top-24 -left-28 h-72 w-72 rounded-full bg-beta-blue/60 blur-3xl" />
+                <div className="absolute -right-28 -bottom-24 h-72 w-72 rounded-full bg-gold/15 blur-3xl" />
             </div>
 
             <div className="mx-auto max-w-7xl px-4">
@@ -82,20 +82,17 @@ export default function GroupTimelineSection() {
                 <div className="mx-auto mt-10 max-w-5xl">
                     <ol className="relative">
                         {/* vertical rail (mobile) */}
-                        <div className="absolute left-5 top-0 hidden h-full w-px bg-alpha/10 sm:block lg:hidden" />
+                        <div className="absolute top-0 left-5 hidden h-full w-px bg-alpha/10 sm:block lg:hidden" />
 
                         {/* center rail (lg+) */}
-                        <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-linear-to-b from-beta/40 via-alpha/10 to-beta/20 lg:block" />
+                        <div className="absolute top-0 left-1/2 hidden h-full w-px -translate-x-1/2 bg-linear-to-b from-beta/40 via-alpha/10 to-beta/20 lg:block" />
 
                         <div className="space-y-6">
                             {timelineItems.map((item, index) => {
                                 const isLeft = index % 2 === 0;
 
                                 return (
-                                    <li
-                                        key={item.year}
-                                        className="relative"
-                                    >
+                                    <li key={item.year} className="relative">
                                         <div className="grid gap-4 lg:grid-cols-2 lg:gap-10">
                                             <div
                                                 className={[
@@ -132,8 +129,8 @@ export default function GroupTimelineSection() {
                                         </div>
 
                                         {/* dot */}
-                                        <div className="absolute left-5 top-7 -ml-2 hidden h-4 w-4 rounded-full bg-beta ring-4 ring-beta-white sm:block lg:hidden" />
-                                        <div className="absolute left-1/2 top-7 hidden h-4 w-4 -translate-x-1/2 rounded-full bg-beta ring-4 ring-beta-white lg:block" />
+                                        <div className="absolute top-7 left-5 -ml-2 hidden h-4 w-4 rounded-full bg-beta ring-4 ring-beta-white sm:block lg:hidden" />
+                                        <div className="absolute top-7 left-1/2 hidden h-4 w-4 -translate-x-1/2 rounded-full bg-beta ring-4 ring-beta-white lg:block" />
                                     </li>
                                 );
                             })}
@@ -144,4 +141,3 @@ export default function GroupTimelineSection() {
         </section>
     );
 }
-

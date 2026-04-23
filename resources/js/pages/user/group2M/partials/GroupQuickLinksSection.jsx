@@ -1,6 +1,6 @@
 export default function GroupQuickLinksSection() {
     return (
-        <section className="bg-transparent pb-18 pt-2">
+        <section className="bg-transparent pt-2 pb-18">
             <div className="mx-auto max-w-7xl px-4">
                 <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
                     <div className="max-w-2xl">
@@ -21,13 +21,13 @@ export default function GroupQuickLinksSection() {
                     {[
                         { label: 'Gouvernance', href: '/gouvernance' },
                         { label: 'ESG', href: '/esg' },
-                        { label: "Appels d’offres", href: '/appels-offres' },
+                        { label: 'Appels d’offres', href: '/appels-offres' },
                         { label: 'Carrières', href: '/carrieres' },
                     ].map((item) => (
                         <a
                             key={item.href}
                             href={item.href}
-                            className="group rounded-2xl bg-alpha-white p-6 shadow-sm ring-1 ring-alpha/10 transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-so-black/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-beta"
+                            className="group rounded-2xl bg-alpha-white p-6 shadow-sm ring-1 ring-alpha/10 transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-so-black/10 focus-visible:ring-2 focus-visible:ring-beta focus-visible:outline-none"
                         >
                             <div className="flex items-start justify-between gap-4">
                                 <div>
@@ -65,4 +65,3 @@ export default function GroupQuickLinksSection() {
         </section>
     );
 }
-
